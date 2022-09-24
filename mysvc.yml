@@ -4,7 +4,7 @@ metadata:
   name: nginx-svc
   labels:
      app: mahaonlinestore
-     version: 2.6.2
+     version: 2.6.1
 
 spec:
   type: NodePort
@@ -14,5 +14,5 @@ spec:
     protocol: TCP
   selector:
       app: mahaonlinestore
-      version: 2.6.2
+      version: 2.6.1
      
