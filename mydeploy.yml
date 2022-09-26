@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: myjavaapp-deploy
   labels:
-    app: myjavaapp
+   app: myjavaapp
 spec:
-  replicas: 3
-  selector:
+   replicas: 3
+   selector:
       matchLabels:
-         app: myjavaapp
-  template:
+          app: myjavaapp
+   template:
      metadata:
        labels:
-         app: myjavaapp
+        app: myjavaapp
      spec:
-       containers:
-       - name: myjavaapp-container
-         image: kiran24iac/myjavaapp26sep2022:1
-       ports:
-         - containerPort: 8080
+      containers:
+      - name: myjavaapp-container
+        image:  kiran24iac/myjavaapp26sep2022:1
+        ports:
+        - containerPort: 8080
